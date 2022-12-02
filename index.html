@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Country Quiz</h1>
+            <div class="container">
+                <div class="img-adventure hidden" id="img-adventure">
+                    <img src="./images/undraw_adventure_4hum 1.svg" alt="">
+                </div>                
+                <div class="content" id="main">
+                    <div class="info">
+                        <div class="info-item">
+                            <span>Preguntas</span>
+                            <span id="progressText"></span>
+                        </div>
+                        <div class="info-item">
+                            <span>Acierto</span>
+                            <span id="score">0</span>
+                        </div>
+                    </div>
+                    <div id="question-img"></div>
+                    <h2 class="question" id="question"></h2>
+                    <div class="choice-container">
+                        <span>A</span>
+                        <p class="choice" data-number="1"></p>
+                    </div>
+                    <div class="choice-container">
+                        <span>B</span>
+                        <p class="choice" data-number="2"></p>
+                    </div>
+                    <div class="choice-container">
+                        <span>C</span>
+                        <p class="choice" data-number="3"></p>
+                    </div>
+                    <div class="choice-container">
+                        <span>D</span>
+                        <p class="choice" data-number="4"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-try">
+                <div class="content align-center">
+                    <div class="img-results">
+                        <img src="./images/undraw_winners_ao2o 2.svg" alt="">
+                    </div>
+                    <h2>Resultados</h2>
+                    <p>Score <span id="finalScore"></span> puntos</p>                  
+                    <p class="btn" id="try">Try again</p>
+                   
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
